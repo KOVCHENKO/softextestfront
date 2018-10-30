@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <notifications></notifications>
+
     <main-header></main-header>
     <router-view/>
   </div>

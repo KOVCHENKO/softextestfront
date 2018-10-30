@@ -13,5 +13,14 @@ module.exports = {
   },
   parserOptions: {
     parser: 'babel-eslint'
-  }
+  },
+  "overrides": [
+    {
+      "files": [ "bin/*.js", "lib/*.js" ],
+      "excludedFiles": "store.js",
+      "rules": {
+        "quotes": [ 2, "single" ]
+      }
+    }
+  ]
 }
