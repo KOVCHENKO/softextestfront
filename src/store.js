@@ -9,7 +9,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    message: new Message('Deafult name', '000 000 000', 'Message by default')
+    message: new Message('Deafult name', '+7(917)086-36-38', 'Message by default')
   },
   mutations: {
 
