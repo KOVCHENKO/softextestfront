@@ -1,5 +1,5 @@
 <template>
-  <div class="page-container">
+  <div class="page-container-lower">
     <div class="row">
       <div class="col-md-2">
       </div>
@@ -22,7 +22,7 @@
               <div class="text-area-counter">Осталось: {{ counter }} символов</div>
             </div>
           </div>
-          <button @click="send" class="btn btn-primary btn-lg btn-block">Send</button>
+          <button @click="send" class="btn btn-primary btn-lg btn-block btn-cstm-color">Send</button>
       </div>
     </div>
   </div>
@@ -46,13 +46,3 @@ export default {
   }
 }
 </script>
-
-<style>
-    .text-area-counter {
-        font-size: 9pt;
-    }
-    .validation-error {
-        color: red;
-        font-size: 12px;
-    }
-</style>

@@ -9,6 +9,11 @@ import VeeValidate, { Validator } from 'vee-validate'
 
 // Маска для полей
 import VueMask from 'v-mask'
+
+// Карусель
+import VueCarousel from 'vue-carousel'
+
+Vue.use(VueCarousel)
 Vue.use(VueMask)
 
 Vue.use(Notifications)
