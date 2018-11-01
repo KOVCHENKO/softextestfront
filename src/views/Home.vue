@@ -1,24 +1,24 @@
 <template>
   <div class="page-container">
   <main role="main">
-      <carousel :perPageCustom="[[480, 1], [768, 3]]">
+      <carousel :perPageCustom="[[1, 1], [700, 3]]">
           <slide>
-              <img class="d-block w-100" src="https://2.bp.blogspot.com/-KMMTTTDkmWM/WINazowZ4WI/AAAAAAAAAe4/OTTL4gi9ZWkGYesYCR7WBnFx5uzGdoGfACLcB/s1600/Google-Assistant.gif" alt="First slide">
+              <img @click="goToSource(`https://stackoverflow.com`)" class="d-block w-100" src="https://2.bp.blogspot.com/-KMMTTTDkmWM/WINazowZ4WI/AAAAAAAAAe4/OTTL4gi9ZWkGYesYCR7WBnFx5uzGdoGfACLcB/s1600/Google-Assistant.gif" alt="First slide">
           </slide>
           <slide>
-              <img class="d-block w-100" src="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/8/8e/Landscape-5-800x400.jpg/revision/latest?cb=20170523222436" alt="Second slide">
+              <img @click="goToSource(`https://mail.ru`)" class="d-block w-100" src="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/8/8e/Landscape-5-800x400.jpg/revision/latest?cb=20170523222436" alt="Second slide">
           </slide>
           <slide>
-              <img class="d-block w-100" src="https://static1.squarespace.com/static/59d4e27b29f187499cb88f6a/t/5b3cbda12b6a2817334d9c68/1530707362973/Malta3-Pentasia-800x400.jpg" alt="Third slide">
+              <img @click="goToSource(`https://medium.com`)" class="d-block w-100" src="https://static1.squarespace.com/static/59d4e27b29f187499cb88f6a/t/5b3cbda12b6a2817334d9c68/1530707362973/Malta3-Pentasia-800x400.jpg" alt="Third slide">
           </slide>
           <slide>
-              <img class="d-block w-100" src="https://2.bp.blogspot.com/-KMMTTTDkmWM/WINazowZ4WI/AAAAAAAAAe4/OTTL4gi9ZWkGYesYCR7WBnFx5uzGdoGfACLcB/s1600/Google-Assistant.gif" alt="First slide">
+              <img @click="goToSource(`https://google.com`)" class="d-block w-100" src="https://2.bp.blogspot.com/-KMMTTTDkmWM/WINazowZ4WI/AAAAAAAAAe4/OTTL4gi9ZWkGYesYCR7WBnFx5uzGdoGfACLcB/s1600/Google-Assistant.gif" alt="First slide">
           </slide>
           <slide>
-              <img class="d-block w-100" src="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/8/8e/Landscape-5-800x400.jpg/revision/latest?cb=20170523222436" alt="Second slide">
+              <img @click="goToSource(`https://microsoft.com`)" class="d-block w-100" src="https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/8/8e/Landscape-5-800x400.jpg/revision/latest?cb=20170523222436" alt="Second slide">
           </slide>
           <slide>
-              <img class="d-block w-100" src="https://static1.squarespace.com/static/59d4e27b29f187499cb88f6a/t/5b3cbda12b6a2817334d9c68/1530707362973/Malta3-Pentasia-800x400.jpg" alt="Third slide">
+              <img @click="goToSource(`https://yandex.ru`)" class="d-block w-100" src="https://static1.squarespace.com/static/59d4e27b29f187499cb88f6a/t/5b3cbda12b6a2817334d9c68/1530707362973/Malta3-Pentasia-800x400.jpg" alt="Third slide">
           </slide>
       </carousel>
     <!-- Marketing messaging and featurettes
@@ -72,6 +72,11 @@
 <script>
 
 export default {
-  name: 'home'
+  name: 'home',
+  methods: {
+    goToSource (link) {
+      window.location.href = link
+    }
+  }
 }
 </script>
